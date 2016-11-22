@@ -1,0 +1,26 @@
+{
+    "name": "cisco",
+    "displayName": "Cisco IOS Syntax",
+    "description": "Cisco IOS Syntax Highlighter",
+    "version": "0.0.1",
+    "publisher": "jamiewoodio",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cisco",
+            "aliases": ["Cisco", "cisco"],
+            "extensions": [".ios",".cfg",".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cisco",
+            "scopeName": "text.cisco",
+            "path": "./syntaxes/cisco.tmLanguage"
+        }]
+    }
+}

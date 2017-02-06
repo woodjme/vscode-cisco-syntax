@@ -6,6 +6,7 @@
 	<array>
 		<string>cfg</string>
 		<string>txt</string>
+		<string>ios</string>
 	</array>
 	<key>name</key>
 	<string>Cisco</string>

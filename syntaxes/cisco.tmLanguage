@@ -8,6 +8,10 @@
 		<string>txt</string>
 		<string>ios</string>
 	</array>
+	<key>foldingStartMarker</key>
+	<string>^interface|^router|^ip access-list extended</string>
+	<key>foldingStopMarker</key>
+	<string>^!</string>
 	<key>name</key>
 	<string>Cisco</string>
 	<key>patterns</key>
@@ -101,6 +105,165 @@
 			<string>[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\d{1,3})?</string>
 			<key>name</key>
 			<string>constant.numeric.cisco</string>
+		</dict>
+		<!--Added new matches from https://github.com/jasongill/cisco-ios-tmbundle -->
+		<dict>
+			<key>match</key>
+			<string>(\bshutdown\b|^boot-(start|end)-marker)</string>
+			<key>name</key>
+			<string>invalid.illegal.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>((^|no )(interface|line|ip (access-list (extended|standard)|dhcp (pool|excluded-address)|route|classless|subnet-zero|nat|http|local pool|flow-export|flow-top-talkers|inspect|domain|ips|host)|router|voice-(card|port)|dial-peer|voice (translation-(rule|profile)|register (global|pool|dn)|service)|application$|crypto (pki|keyring|isakmp (profile|policy|client configuration)|ipsec (profile|transform-set)|(dynamic-)?map)|telephony-service|ephone(-dn)?|banner|(class|policy|route)-map|map-class)|\b(ssid|pvc|certificate)|service|clock|boot|logging|control-plane|aaa|(tftp|snmp|radius)-server|ntp|bridge|(access|dialer)-list|archive)\b</string>
+			<key>name</key>
+			<string>support.control.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}|\h{1,4}\.\h{1,4}\.\h{1,4}(\.\h{1,2})?)\b</string>
+			<key>name</key>
+			<string>constant.numeric.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<!-- <string>\b((Fast|Gigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template|TenGigE|tunnel-ip|Bundle-Ether ))((\d+[\.:/])*)?\d+\b</string> -->
+			<string>\b((Fast|Gigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template)|TenGigE|tunnel-ip|Bundle-Ether)</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\binterface</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^!.*$</string>
+			<key>name</key>
+			<string>comment.bang.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(description|remark|system message)\s.*$</string>
+			<key>name</key>
+			<string>comment.documentation.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bno\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^version.*$</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^(username|hostname|enable)\b</string>
+			<key>name</key>
+			<string>keyword.other.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(network|passive-interface|redistribute|auto-summary|synchronization|bgp|neighbor|default-information)\b</string>
+			<key>name</key>
+			<string>keyword.other.routing.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(ip (address|unnumbered|proxy-arp|nat|nbar|virtual-reassembly|access-group|verify)|speed|(full-|half-)?duplex|cdp enable|encapsulation|dialer(-group)?|compress|ppp|crypto|channel|station-role|encryption|broadcast-key|snmp|isdn|dsl|tunnel|bandwidth|fair-queue|physical-layer|async mode|peer default|switchport|media-type|clockrate)\b</string>
+			<key>name</key>
+			<string>keyword.other.interface.cisco</string>
+		</dict>
+		<!-- IOS-XR specific commands -->
+		<dict>
+			<key>match</key>
+			<string>\b(ipv(4|6) (address|address-family|unnumbered|proxy-arp|nat|nbar|virtual-reassembly|access-group|verify)|speed|(full-|half-)?duplex|cdp enable|encapsulation|dialer(-group)?|compress|ppp|crypto|channel|station-role|encryption|broadcast-key|snmp|isdn|dsl|tunnel|bandwidth|fair-queue|physical-layer|async mode|peer default|switchport|media-type|clockrate|bundle|vrf|mtu|lacp|bfd)\b</string>
+			<key>name</key>
+			<string>keyword.control.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b((session|exec)-timeout|login|password|stopbits|access-class|transport (input|output))\b</string>
+			<key>name</key>
+			<string>keyword.other.line.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(domain-name|default-router|dns-server|host|client-(name|identifier)|option)\b</string>
+			<key>name</key>
+			<string>keyword.other.dhcp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\baddress-family\b</string>
+			<key>name</key>
+			<string>constant.language.address-family.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(device-security-mode|mac-address|type|button|video|username)\b</string>
+			<key>name</key>
+			<string>keyword.other.ephone.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(number|name|call-forward|hold-alert)\b</string>
+			<key>name</key>
+			<string>keyword.other.ephonedn.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(load|max-ephones|max-dn|ip|auto|calling-number|timeouts|time-zone|time-format|date-format|dialplan-pattern|max-conferences|moh|web|(dn|time)-webedit|transfer-(system|pattern)|create)\b</string>
+			<key>name</key>
+			<string>keyword.other.telephony.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(translation-profile|answer-address|destination-pattern|progress_ind|incoming|direct-inward-dial|port|max-conn|information-type|session (target|protocol)|dtmf-relay|codec|vad)\b</string>
+			<key>name</key>
+			<string>keyword.other.dial-peer.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(compand-type|comfort-noise|cptone)\b</string>
+			<key>name</key>
+			<string>keyword.other.voice-port.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(permit|deny|log|established|evaluate)\b</string>
+			<key>name</key>
+			<string>keyword.other.acl.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(auth(entic|oriz)ation|accounting)\b</string>
+			<key>name</key>
+			<string>keyword.other.aaa.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bmatch (ip precedence|protocol|access-group)\b</string>
+			<key>name</key>
+			<string>keyword.other.class-map.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(class(-default)?|set ip dscp|priority)\b</string>
+			<key>name</key>
+			<string>keyword.other.policy-map.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(frame-relay|service-policy)\b</string>
+			<key>name</key>
+			<string>keyword.other.map-class.cisco</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

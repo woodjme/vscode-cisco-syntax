@@ -8,6 +8,10 @@
     "engines": {
         "vscode": "^1.5.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/woodjamie/vscode-cisco-syntax.git"
+    },
     "categories": [
         "Languages"
     ],
@@ -15,7 +19,7 @@
         "languages": [{
             "id": "cisco",
             "aliases": ["Cisco", "cisco"],
-            "extensions": [".ios",".cfg",".txt"],
+            "extensions": [".ios", ".cfg", ".txt"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

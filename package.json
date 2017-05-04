@@ -2,7 +2,7 @@
     "name": "cisco",
     "displayName": "Cisco IOS Syntax",
     "description": "Cisco IOS Syntax Highlighter",
-    "version": "0.0.6",
+    "version": "1.0.0",
     "publisher": "jamiewoodio",
     "icon": "images/cisco.jpg",
     "engines": {

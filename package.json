@@ -2,7 +2,7 @@
     "name": "cisco",
     "displayName": "Cisco IOS Syntax",
     "description": "Cisco IOS Syntax Highlighter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "jamiewoodio",
     "icon": "images/cisco.jpg",
     "license": "MIT",
@@ -17,16 +17,27 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "cisco",
-            "aliases": ["Cisco", "cisco"],
-            "extensions": [".ios", ".cfg", ".txt"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "cisco",
-            "scopeName": "text.cisco",
-            "path": "./syntaxes/cisco.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "cisco",
+                "aliases": [
+                    "Cisco",
+                    "cisco"
+                ],
+                "extensions": [
+                    ".ios",
+                    ".cfg",
+                    ".txt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cisco",
+                "scopeName": "text.cisco",
+                "path": "./syntaxes/cisco.tmLanguage"
+            }
+        ]
     }
 }

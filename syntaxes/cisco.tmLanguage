@@ -4,8 +4,6 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>cfg</string>
-		<string>txt</string>
 		<string>ios</string>
 	</array>
 	<key>foldingStartMarker</key>

@@ -14,7 +14,7 @@
         "url": "git+https://github.com/woodjamie/vscode-cisco-syntax.git"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
@@ -25,9 +25,7 @@
                     "cisco"
                 ],
                 "extensions": [
-                    ".ios",
-                    ".cfg",
-                    ".txt"
+                    ".ios"
                 ],
                 "configuration": "./language-configuration.json"
             }

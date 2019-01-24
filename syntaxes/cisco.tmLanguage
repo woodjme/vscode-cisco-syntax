@@ -126,7 +126,7 @@
 		<dict>
 			<key>match</key>
 			<!-- <string>\b((Fast|Gigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template|TenGigE|tunnel-ip|Bundle-Ether ))((\d+[\.:/])*)?\d+\b</string> -->
-			<string>\b((Fast|Gigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template)|TenGigE|tunnel-ip|Bundle-Ether)</string>
+			<string>\b((Fast|Gigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|[Ll]oopback|Null|[Pp]ort-channel|Virtual-(Access|Dot11Radio|PPP|Template)|TenGigE|tunnel-ip|Bundle-Ether)</string>
 			<key>name</key>
 			<string>constant.language.cisco</string>
 		</dict>

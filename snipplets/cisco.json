@@ -1,0 +1,55 @@
+{
+"Add vlan": {
+		"prefix": "add-vlan",
+		"body": [
+			"vlan ${1:id}",
+			"  name ${2:name}",
+			"$0"
+		],
+		"description": "Add vlan to vlan-database"
+	},
+	"Remove vlan": {
+		"prefix": "remove-vlan",
+		"body": [
+			"no vlan ${1:id}",
+			"$0"
+		],
+		"description": "Remove vlan from vlan-database"
+	},
+	"Add vlan to trunk": {
+		"prefix": "add-vlan-to-trunk",
+		"body": [
+			"interface ${1:interface}",
+			"  switchport trunk allowed vlan add ${2:vlan-list}",
+			"$0"
+		],
+		"description": "Add vlan to switchport allowed-vlan list"
+	},
+	"Remove vlan from trunk": {
+		"prefix": "remove-vlan-from-trunk",
+		"body": [
+			"interface ${1:interface}",
+			"  switchport trunk allowed vlan remove ${2:vlan-list}",
+			"$0"
+		],
+		"description": "Remove vlan from switchport allowed-vlan list"
+	},
+	"Add vlan to otv overlay": {
+		"prefix": "add-vlan-to-otv",
+		"body": [
+			"interface Overlay${1:overlay_num}",
+			"  otv extend-vlan add ${2:vlan}",
+			"$0"
+		],
+		"description": "Remove vlan from otv overlay interface"
+	},
+	"Remove vlan from otv overlay": {
+		"prefix": "remove-vlan-from-otv",
+		"body": [
+			"interface Overlay${1:overlay_num}",
+			"  otv extend-vlan remove ${2:vlan}",
+			"$0"
+		],
+		"description": "Remove vlan from otv overlay interface"
+	}
+}

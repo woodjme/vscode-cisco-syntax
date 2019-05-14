@@ -33,6 +33,14 @@
 			<string>string.unquoted.cisco</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+                        <string>\^C</string>
+			<key>end</key>
+                        <string>\^C</string>
+			<key>name</key>
+			<string>string.quoted.cisco</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>any[46]? </string>
 			<key>name</key>

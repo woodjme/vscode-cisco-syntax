@@ -1,11 +1,11 @@
 # vscode-cisco-syntax
 
-Cisco Syntax Highlighting for [Visual Studio Code](https://code.visualstudio.com/).
+Cisco IOS Syntax Highlighting for [Visual Studio Code](https://code.visualstudio.com/)
 
-Save files with the file extension ".ios" to enable syntax highlighting.
+## Quick Start
 
-Converted from [here](https://github.com/tunnelsup/sublime-cisco-syntax).
+* Install the [extension](https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco) with VSCode
 
-Source can be found [here](https://github.com/woodjme/vscode-cisco-syntax).
+* Save a file with the `.ios` extension and open with VSCode
 
-https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco
+[GitHub Repo](https://github.com/woodjme/vscode-cisco-syntax)

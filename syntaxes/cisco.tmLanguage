@@ -133,7 +133,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((Fast|Gigabit|TenGigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|[Ll]oopback|Null|[Pp]ort-channel|Virtual-(Access|Dot11Radio|PPP|Template)|TenGigE|HundredGigE|tunnel-ip|Bundle-Ether|MgmtEth0)</string>
+			<string>\b((Fast|Gigabit|TenGigabit|FortyGigabit)?Ethernet|Dialer|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|[Ll]oopback|Null|[Pp]ort-channel|Virtual-(Access|Dot11Radio|PPP|Template)|TenGigE|TwentyFiveGigE|HundredGigE|tunnel-ip|Bundle-Ether|MgmtEth0)</string>
 			<key>name</key>
 			<string>constant.language.cisco</string>
 		</dict>

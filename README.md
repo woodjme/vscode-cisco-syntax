@@ -4,7 +4,7 @@ Cisco IOS Syntax Highlighting for [Visual Studio Code](https://code.visualstudio
 
 ## Quick Start
 
-* Install the [extension](https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco) with VSCode
+* Install the [extension](https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco) with VSCode from the [marketplace](https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco).
 
 * Save a file with the `.ios` extension and open with VSCode
 

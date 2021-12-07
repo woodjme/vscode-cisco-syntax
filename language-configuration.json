@@ -20,5 +20,11 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "folding": {
+      "markers": {
+        "start": "(^interface |^ip dhcp pool |^ssid )",
+        "end": "(^exit|^!)"
+      }
+    }
 }

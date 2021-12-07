@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.9.1] - 07-12-2021
+
+### Added
+
+Folding for interfaces, DHCP pools and SSIDs
+
+### Changed
+
+None
+
+### Removed
+
+None
+
 ## [1.9.0] - 26-09-2020
 
 ### Added

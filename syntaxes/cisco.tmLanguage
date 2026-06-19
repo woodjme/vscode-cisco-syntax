@@ -270,6 +270,130 @@
 			<key>name</key>
 			<string>keyword.other.map-class.cisco</string>
 		</dict>
+		<!-- VLAN and VTP commands -->
+		<dict>
+			<key>match</key>
+			<string>\bvlan(-configuration|(-edit|-filter))?\b</string>
+			<key>name</key>
+			<string>support.control.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(vlan|remote-span|private-vlan)\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(name|state|suspend|resume|mtu|said|stp|mode)\b</string>
+			<key>name</key>
+			<string>keyword.other.vlan.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(primary|isolated|community|association|secondary)\b</string>
+			<key>name</key>
+			<string>keyword.other.private-vlan.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bvtp\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(mode|domain|version|password|pruning)\b</string>
+			<key>name</key>
+			<string>keyword.other.vtp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(server|client|transparent|off)\b</string>
+			<key>name</key>
+			<string>keyword.other.vtp.cisco</string>
+		</dict>
+		<!-- Switchport commands -->
+		<dict>
+			<key>match</key>
+			<string>\bswitchport\b</string>
+			<key>name</key>
+			<string>constant.language.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bmode (access|trunk|dynamic (auto|desirable)|dot1q-tunnel)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\baccess (vlan|voice)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\btrunk (encapsulation|allowed|native|pruning)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(nonegotiate|block|auto|negotiate)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bvoice (vlan|dot1p|priority)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(host-mode|protected)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<!-- VLAN interface / SVI -->
+		<dict>
+			<key>match</key>
+			<string>\bautostate\b</string>
+			<key>name</key>
+			<string>keyword.other.vlan.cisco</string>
+		</dict>
+		<!-- STP keywords -->
+		<dict>
+			<key>match</key>
+			<string>\bspanning-tree (portfast|bpduguard|bpdufilter|backbonefast|uplinkfast)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(stp|rstp|mstp|pvst|rapid-pvst)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(root (primary|secondary)|cost|priority|guard|filter)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(port (priority|fast))\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(loopguard|loop-guard)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.cisco</string>

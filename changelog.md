@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.10.0] - 06-19-2026
+
+### Added
+
+* Add Syntax for VLAN configuration (vlan, private-vlan, remote-span)
+* Add Syntax for VTP (mode, domain, version, password, pruning)
+* Add Syntax for Switchport (mode access/trunk/dynamic/dot1q-tunnel, trunk allowed/native, voice vlan)
+* Add Syntax for VLAN interface (autostate)
+* Add Syntax for Spanning Tree (portfast, bpduguard, bpdufilter, root, cost, priority, loopguard)
+
+### Changed
+
+None
+
+### Removed
+
+None
+
 ## [1.9.1] - 07-12-2021
 
 ### Added

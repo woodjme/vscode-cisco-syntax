@@ -181,6 +181,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\bswitchport (mode (access|trunk|dynamic (auto|desirable)|dot1q-tunnel)|access vlan|voice vlan|trunk (encapsulation (dot1q|isl|negotiate)|allowed vlan( add| remove| except| none)?|native vlan|pruning vlan)|nonegotiate|port-security|protected|host)\b</string>
+			<key>name</key>
+			<string>keyword.other.switchport.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bspanning-tree (portfast( default| trunk)?|bpduguard|bpdufilter|guard (root|loop|none)|loopguard default|backbonefast|uplinkfast|mode (mst|rapid-pvst|pvst)|mst|vlan|cost|port-priority|link-type|etherchannel guard misconfig)\b</string>
+			<key>name</key>
+			<string>keyword.other.stp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(ip (address|unnumbered|proxy-arp|nat|nbar|virtual-reassembly|access-group|verify)|speed|(full-|half-)?duplex|cdp enable|encapsulation|dialer(-group)?|compress|ppp|crypto|channel(-group)?|station-role|encryption|broadcast-key|snmp|isdn|dsl|tunnel|bandwidth|fair-queue|physical-layer|async mode|peer default|switchport|media-type|clockrate|spanning-tree)\b</string>
 			<key>name</key>
 			<string>keyword.other.interface.cisco</string>
@@ -275,6 +287,18 @@
 			<string>\bMgmt-vrf\b</string>
 			<key>name</key>
 			<string>constant.other.default.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bvtp (mode (server|client|transparent|off)|domain|version|password|pruning|file|interface)\b</string>
+			<key>name</key>
+			<string>keyword.other.vtp.cisco</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(private-vlan( (primary|isolated|community|association( add| remove)?))?|remote-span|autostate)\b</string>
+			<key>name</key>
+			<string>keyword.other.vlan.cisco</string>
 		</dict>
 
 	</array>

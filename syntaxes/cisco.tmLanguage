@@ -121,9 +121,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>((^$|no )(interface|line|ip (access-list (extended|standard)|dhcp (pool|excluded-address)|route|classless|subnet-zero|nat|http|local pool|flow-export|flow-top-talkers|inspect|domain|ips|host)|router|voice-(card|port)|dial-peer|voice (translation-(rule|profile)|register (global|pool|dn)|service)|application$|crypto (pki|keyring|isakmp (profile|policy|client configuration)|ipsec (profile|transform-set)|(dynamic-)?map)|telephony-service|ephone(-dn)?|banner|(class|policy|route)-map|map-class)|\b(ssid|pvc|certificate)|service|clock|boot|logging|control-plane|aaa|(tftp|snmp|radius)-server|ntp|bridge|(access|dialer)-list|archive)\b</string>
+			<string>((^|no )(ip (access-list (extended|standard)|dhcp (pool|excluded-address)|route|classless|subnet-zero|nat|http|local pool|flow-export|flow-top-talkers|inspect|domain(-name|-list|-lookup)?|ips|host)|router|voice-(card|port)|dial-peer|voice (translation-(rule|profile)|register (global|pool|dn)|service)|application$|crypto (pki|keyring|isakmp (profile|policy|client configuration)|ipsec (profile|transform-set)|(dynamic-)?map)|telephony-service|ephone(-dn)?|banner|map-class)|\b(ssid|pvc|certificate)|service(?!-policy)|clock|boot|logging|control-plane|aaa|(tftp|snmp|radius)-server|ntp|bridge|(access|dialer)-list|archive)\b</string>
 			<key>name</key>
-			<string>support.control.cisco</string>
+			<string>keyword.control.cisco</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -175,7 +175,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(network|passive-interface|redistribute|auto-summary|synchronization|bgp|neighbor|default-information)\b</string>
+			<string>\b(network|passive-interface|redistribute|auto-summary|synchronization|bgp|neighbor|default-information|template|inherit|(exit-)?peer-(policy|session)|remote-as|send-community|ttl-security)\b</string>
 			<key>name</key>
 			<string>keyword.other.routing.cisco</string>
 		</dict>

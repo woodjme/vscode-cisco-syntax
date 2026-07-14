@@ -54,7 +54,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>permit </string>
+			<string>permit |match-any| match </string>
 			<key>name</key>
 			<string>constant.character.escape.cisco</string>
 		</dict>
@@ -62,7 +62,7 @@
 			<key>match</key>
 			<string>object-group</string>
 			<key>name</key>
-			<string>markup.list.cisco</string>
+			<string>keyword.list.cisco</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -139,7 +139,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\binterface</string>
+			<string>\binterface|^vlan</string>
 			<key>name</key>
 			<string>constant.language.cisco</string>
 		</dict>
@@ -181,7 +181,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ip (address|unnumbered|proxy-arp|nat|nbar|virtual-reassembly|access-group|verify)|speed|(full-|half-)?duplex|cdp enable|encapsulation|dialer(-group)?|compress|ppp|crypto|channel|station-role|encryption|broadcast-key|snmp|isdn|dsl|tunnel|bandwidth|fair-queue|physical-layer|async mode|peer default|switchport|media-type|clockrate)\b</string>
+			<string>\b(ip (address|unnumbered|proxy-arp|nat|nbar|virtual-reassembly|access-group|verify)|speed|(full-|half-)?duplex|cdp enable|encapsulation|dialer(-group)?|compress|ppp|crypto|channel(-group)?|station-role|encryption|broadcast-key|snmp|isdn|dsl|tunnel|bandwidth|fair-queue|physical-layer|async mode|peer default|switchport|media-type|clockrate|spanning-tree)\b</string>
 			<key>name</key>
 			<string>keyword.other.interface.cisco</string>
 		</dict>
@@ -194,7 +194,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((session|exec)-timeout|login|password|stopbits|access-class|transport (input|output))\b</string>
+			<string>\b((session|exec)-timeout|login|length|password|stopbits|access-class|transport (input|output)|line)\b</string>
 			<key>name</key>
 			<string>keyword.other.line.cisco</string>
 		</dict>
@@ -218,7 +218,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(number|name|call-forward|hold-alert)\b</string>
+			<string>\b(number|name|instance|call-forward|hold-alert)\b</string>
 			<key>name</key>
 			<string>keyword.other.ephonedn.cisco</string>
 		</dict>
@@ -260,7 +260,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(class(-default)?|set ip dscp|priority)\b</string>
+			<string>\b(class(-default|-map)?|set ip dscp|priority|(policy|route)-map)\b</string>
 			<key>name</key>
 			<string>keyword.other.policy-map.cisco</string>
 		</dict>
@@ -270,6 +270,13 @@
 			<key>name</key>
 			<string>keyword.other.map-class.cisco</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bMgmt-vrf\b</string>
+			<key>name</key>
+			<string>constant.other.default.cisco</string>
+		</dict>
+
 	</array>
 	<key>scopeName</key>
 	<string>text.cisco</string>
